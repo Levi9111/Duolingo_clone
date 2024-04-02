@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { Check, Crown, Star } from 'lucide-react';
-import { CircularProgressbarWithChildren as Circle } from 'react-circular-progressbar';
+import { CircularProgressbarWithChildren } from 'react-circular-progressbar';
 
 import 'react-circular-progressbar/dist/styles.css';
 import Link from 'next/link';
@@ -69,7 +69,7 @@ const LessonButton = ({
               Start
               <div className='absolute left-1/2 -bottom-2 w-0 h-0 border-x-8 border-x-transparent border-t-8 transform -translate-x-1/2' />
             </div>
-            <Circle
+            <CircularProgressbarWithChildren
               value={Number.isNaN(percentage) ? 0 : percentage}
               styles={{
                 path: {
@@ -93,7 +93,7 @@ const LessonButton = ({
                   )}
                 />
               </Button>
-            </Circle>
+            </CircularProgressbarWithChildren>
           </div>
         ) : (
           <Button
