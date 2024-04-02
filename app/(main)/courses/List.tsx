@@ -39,7 +39,6 @@ export const List = ({ courses, activeCourseId }: Props) => {
           active={course.id === activeCourseId}
         />
       ))}
-      List
     </div>
   );
 };
